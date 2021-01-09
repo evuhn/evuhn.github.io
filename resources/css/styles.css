@@ -10,6 +10,12 @@ body, html {
     line-height: 1.8em;
 }
 
+.section-header{ 
+    text-align: center;
+    font-size: 1.8em;
+}
+
+
 /* nav-bar */
 .nav-bar {
     position: fixed;
@@ -112,10 +118,16 @@ body, html {
 
 
 /* About section */
+
+.about{
+    padding: 50px;
+}
+
 .about-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .about-section{
@@ -208,21 +220,37 @@ body, html {
 }
 
 /* work experience section */
+
+.experiences{
+    height: auto;
+    background-color: rgb(36, 35, 35);
+    padding: 50px;
+}
+
 .experience-container {
+    background-color: rgb(36, 35, 35);
     position: relative;
     margin: 0 auto;
     width: 75%;
-    border: 3px solid green;
+ 
     padding: 10px;
 
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: auto auto auto;
-
+    justify-content: space-around;
 }
 
-.company {
-    grid-area: 
+.work-position {
+    position: relative;
+    bottom: 15px;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.experience-description h4, p {
+    position: relative;
+    bottom: 1.2em;
 }
 
 
@@ -235,7 +263,7 @@ body, html {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     background-attachment: fixed;
 }
 
